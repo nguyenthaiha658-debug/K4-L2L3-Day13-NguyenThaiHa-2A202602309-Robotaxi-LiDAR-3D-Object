@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "image": {
+    "id": "sha256:5484cfc43741b14af127616c2e9547a142d2bd8e5163e1a34430562b471bc679",
+    "os": "linux",
+    "architecture": "arm64",
+    "source_tag": "day13-pointpillars:student"
+  },
+  "checkpoint": {
+    "path": "/opt/PointPillars/pretrained/epoch_160.pth",
+    "sha256": "482dfcf63b932cc5ccf012b4bbdad52aa51aa33becf87d0a39d61c39b377b5b1"
+  },
+  "code": {
+    "repo_revision": "f5f1de01c98d34240847e3634b4c69fe7376d9db",
+    "working_tree_dirty": false,
+    "preannotate_sha256": "65edf6ac95926f799c27f2c30c8595b0da4e8e2429f0c1a9aedf5c9e1fceb5ca",
+    "helper_sha256": "c177fc008f79223e94b8c06423d3a806e422787d48c8d39f1c5fd3ce2c4eeaa7"
+  },
+  "input_sha256": "3b5ea3da13e2b19149cab6a8d521c2ca55f2df93f026b5a3f8c273ce70645d60",
+  "runtime": {
+    "os": "linux",
+    "architecture": "arm64"
+  },
+  "limits": {
+    "cpus": 4,
+    "memory": "4g"
+  },
+  "steps": [
+    {
+      "name": "docker-load",
+      "started_utc": "2026-10-01T08:05:54.152181+00:00",
+      "status": "passed",
+      "ended_utc": "2026-10-01T08:05:58.731759+00:00",
+      "elapsed_seconds": 4.579507791000651
+    },
+    {
+      "name": "run-A",
+      "started_utc": "2026-10-01T08:05:58.807641+00:00",
+      "status": "passed",
+      "ended_utc": "2026-10-01T08:06:31.728334+00:00",
+      "elapsed_seconds": 32.921686207992025,
+      "boxes": 1,
+      "prediction_sha256": "f5b84cb945358260c13e7f4a7f2ebde81b705ef6a1e2f4ffcadba2164fa15272"
+    },
+    {
+      "name": "run-B",
+      "started_utc": "2026-10-01T08:06:31.729085+00:00",
+      "status": "passed",
+      "ended_utc": "2026-10-01T08:06:38.894975+00:00",
+      "elapsed_seconds": 7.166133166989312,
+      "boxes": 13,
+      "prediction_sha256": "51f49ac6ba8c97f8a2458e289fee48a33e1d07dd94de99ba935c142fd7e26016"
+    },
+    {
+      "name": "run-C",
+      "started_utc": "2026-10-01T08:06:38.895458+00:00",
+      "status": "passed",
+      "ended_utc": "2026-10-01T08:06:42.904466+00:00",
+      "elapsed_seconds": 4.009205749985995,
+      "boxes": 6,
+      "prediction_sha256": "777c47068903d0b631cd69081c1d0a5706ad7ff58f8be3b22a1c6e3fb3cc3be2"
+    },
+    {
+      "name": "qc-cases",
+      "started_utc": "2026-10-01T08:06:42.905102+00:00",
+      "status": "passed",
+      "ended_utc": "2026-10-01T08:06:43.865394+00:00",
+      "elapsed_seconds": 0.9603526249993593
+    }
+  ]
+}
